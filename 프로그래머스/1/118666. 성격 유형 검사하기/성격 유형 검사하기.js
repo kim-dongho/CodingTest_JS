@@ -20,10 +20,10 @@ function solution(survey, choices) {
         }
     })
 
-    map.get('R') >= map.get('T') ? answer += "R" : answer += "T";
-    map.get('C') >= map.get('F') ? answer += "C" : answer += "F";
-    map.get('J') >= map.get('M') ? answer += "J" : answer += "M";
-    map.get('A') >= map.get('N') ? answer += "A" : answer += "N";
+    answer += map.get('R') >= map.get('T') ? "R" : "T";
+    answer += map.get('C') >= map.get('F') ? "C" : "F";
+    answer += map.get('J') >= map.get('M') ? "J" : "M";
+    answer += map.get('A') >= map.get('N') ? "A" : "N";
     
     return answer;
 }
