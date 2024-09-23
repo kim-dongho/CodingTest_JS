@@ -13,7 +13,7 @@ function solution(cacheSize, cities) {
             arr.unshift(city);
             answer += 1;
         } else {
-            if(!(arr.length < cacheSize)) {
+            if(arr.length === cacheSize) {
                 arr.pop();
             }
             arr.unshift(city);
